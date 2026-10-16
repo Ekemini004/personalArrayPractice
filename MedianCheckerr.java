@@ -18,21 +18,25 @@ public class MedianCheckerr{
         //merge them
         //move throught the emoty one and then use the index of the loop to add its value into the new array
 
-        for(int index = 0; index <= nums3.length - 1; index++){
+        for(int index = 0; index < nums3.length-1; index++){
 
-            nums3[index] = nums1[index]; 
-
-            if(index == 1)
-
-               nums3[index] = nums1[index]; 
-
-               nums3[index] = nums2[index - 1];
-
-               
+            nums3[index] = nums1[index]; //nums1 bcomes emoty later beuse i dont need it, ui want it to be empty
 
 
          }
        
+
+
+        for(int indexTwo = 0; indexTwo <= nums3.length-1; indexTwo++){
+
+            if(indexTwo == 2){
+
+                nums3[indexTwo] = nums2[nums2.length - 1];
+            
+            }   //nums1 bcomes emoty later beuse i dont need it, ui want it to be empty
+
+
+         }
 
 
         for(int indexThree = 0; indexThree < nums3.length; indexThree++){
