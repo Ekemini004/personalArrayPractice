@@ -1,0 +1,56 @@
+public class MedianCheckerr{
+
+    public static void main(String [] args){
+
+        
+
+        //create the two arrays with values
+
+        int [] nums1 = {1, 3};
+
+        int [] nums2 = {2};
+
+        int [] nums3 = new int [nums1.length + nums2.length];
+
+
+
+       
+        //merge them
+        //move throught the emoty one and then use the index of the loop to add its value into the new array
+
+        for(int index = 0; index <= nums3.length - 1; index++){
+
+            nums3[index] = nums1[index]; 
+
+            if(index == 1)
+
+               nums3[index] = nums1[index]; 
+
+               nums3[index] = nums2[index - 1];
+
+               
+
+
+         }
+       
+
+
+        for(int indexThree = 0; indexThree < nums3.length; indexThree++){
+
+            System.out.println(nums3[indexThree]);
+
+
+         }
+    
+
+
+
+
+    }
+
+
+
+
+
+
+}
