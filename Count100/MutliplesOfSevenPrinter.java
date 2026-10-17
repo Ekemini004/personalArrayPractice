@@ -14,10 +14,10 @@ public class MutliplesOfSevenPrinter{
 
             if(count == 10){
 
-            System.out.println();
-            System.out.printf("%d, ", index);
-            count = 0;
-            
+                System.out.println();
+                System.out.printf("%d, ", index);
+                count = 0;
+                
 
             }
 
@@ -29,28 +29,6 @@ public class MutliplesOfSevenPrinter{
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
