@@ -8,7 +8,7 @@ public class MedianCheckerr{
 
         int [] nums1 = {1, 3};
 
-        int [] nums2 = {2};
+        int [] nums2 = {2, 4, 6};
 
         int [] nums3 = new int [nums1.length + nums2.length];
 
@@ -18,9 +18,10 @@ public class MedianCheckerr{
         //merge them
         //move throught the emoty one and then use the index of the loop to add its value into the new array
 
-        for(int index = 0; index < nums3.length-1; index++){
+        for(int index = 0; index < nums3.length; index++){
 
-            nums3[index] = nums1[index]; //nums1 bcomes emoty later beuse i dont need it, ui want it to be empty
+            if(index < nums1.length)
+                nums3[index] = nums1[index]; //nums1 bcomes emoty later beuse i dont need it, i want it to be empty
 
 
          }
@@ -33,7 +34,7 @@ public class MedianCheckerr{
 
                 nums3[indexTwo] = nums2[indexTwo - nums1.length];
             
-            }   //nums1 bcomes emoty later beuse i dont need it, ui want it to be empty
+            }   
 
 
          }
@@ -46,6 +47,12 @@ public class MedianCheckerr{
 
          }
     
+        System.out.println();  
+
+        SortThis.sortThisArray(nums3); //sort merged array
+        
+
+
 
 
 

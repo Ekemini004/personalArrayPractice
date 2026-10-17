@@ -11,7 +11,7 @@ public static void sortThisArray(int [] array){
 
          for(int indexTwo = index + 1; indexTwo < array.length; indexTwo++){
 
-            if(array[indexTwo] > array[index]){
+            if(array[indexTwo] < array[index]){
 
                 tempHolder = array[indexTwo];
                 array[indexTwo] = array[index];
@@ -32,7 +32,7 @@ public static void sortThisArray(int [] array){
     for(int index = 0; index < array.length; index++){
 
 
-       System.out.printf("[%d, ]", array[index] );
+       System.out.printf("%d ", array[index] );
         
 
     }
