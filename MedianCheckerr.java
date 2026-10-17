@@ -29,19 +29,19 @@ public class MedianCheckerr{
 
         for(int indexTwo = 0; indexTwo <= nums3.length-1; indexTwo++){
 
-            if(indexTwo == 2){
+            if(indexTwo >= nums1.length){
 
-                nums3[indexTwo] = nums2[nums2.length - 1];
+                nums3[indexTwo] = nums2[indexTwo - nums1.length];
             
             }   //nums1 bcomes emoty later beuse i dont need it, ui want it to be empty
 
 
          }
 
-
+        //print merged array
         for(int indexThree = 0; indexThree < nums3.length; indexThree++){
 
-            System.out.println(nums3[indexThree]);
+            System.out.printf("%d  ",nums3[indexThree]);
 
 
          }
